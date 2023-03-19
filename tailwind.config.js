@@ -18,6 +18,7 @@ module.exports = {
         checkboxColor: "#CBCBCB",
         navColor: "#F6F6F6",
         lightgray: "#CBCBCB",
+        lightblue: "#2F6AA366",
       },
       transitionProperty: {
         width: "width",
