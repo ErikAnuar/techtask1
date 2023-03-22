@@ -12,7 +12,7 @@ const Navbar = (props) => {
         <li>
           <img
             src={logo1}
-            className="opacity-50 hover:opacity-100 mr-96 ml-20 "
+            className="opacity-50 hover:opacity-100 mr-60 ml-20 "
           ></img>
         </li>
 

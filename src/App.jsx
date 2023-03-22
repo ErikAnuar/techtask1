@@ -26,6 +26,7 @@ import { VerticalNav } from "./components/VerticalNav";
 import Preloader from "./pages/Preloader";
 import { Gpark } from "./pages/Gpark";
 import Footer from "./components/Footer";
+import Calculator from "./pages/Calculator";
 
 const App = () => {
   const [value, setValue] = useState(0);
@@ -115,7 +116,7 @@ const App = () => {
     <div>
       {/* <Preloader /> */}
 
-      <Main className="relative">
+      {/* <Main className="relative">
         <Navbar
           className="absolute bg-white"
           button={
@@ -129,21 +130,17 @@ const App = () => {
       <Onthewaytocase className="relative"></Onthewaytocase>
       <Case />
       <Exp />
-
-      {/* <Gpark>
+      <Calculator /> */}
+      <Gpark>
         <Navbar
-          className="absolute z-50 bg-white"
+          className="absolute bg-white"
           button={
-            <Button
-              className={
-                " w-[147px] h-[34px] rounded-md text-primary border-primary border hover:bg-primary hover:text-white font-inter non-italic font-light text-sm leading-2.9 pl-3.5 pr-3.5 pt-2.5 pb-2.5 ml-[0px] mr-[245px]  "
-              }
-            >
-              оформить заявку
+            <Button className="rounded-md text-primary border-primary border hover:bg-primary hover:text-white font-inter non-italic font-light text-sm leading-2.9 pl-3.5 pr-3.5 pt-2.5 pb-2.5">
+              Получить консультацию
             </Button>
           }
         />
-      </Gpark> */}
+      </Gpark>
     </div>
   );
 };

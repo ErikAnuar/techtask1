@@ -14,6 +14,7 @@ import Jetisu1 from "./../assets/jetisu1.png";
 import Jetisu2 from "./../assets/jetisu2.png";
 import Jetisu3 from "./../assets/jetisu3.png";
 import Jetisu4 from "./../assets/jetisu4.png";
+import line9 from "./../assets/line9.png";
 
 export const Case = (props) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -77,7 +78,7 @@ export const Case = (props) => {
         <h1 className="ml-[83px] mt-[245px] absolute text-white font-medium text-3xl text-left leading-snug">
           Jetisu
         </h1>
-        <span className="ml-[300px] mt-[245px] absolute font-inter font-light text-lightgray">
+        <span className="ml-[300px] mt-[245px] absolute light text-lightgray">
           Полный <br /> цикл
         </span>
         <div onMouseEnter={handleHover} onMouseLeave={handleUnhover}>
@@ -175,7 +176,7 @@ export const Case = (props) => {
             </Card>
           </div>
         </div>
-        <span className="ml-[300px] mt-[361px] absolute font-inter font-light text-lightgray">
+        <span className="ml-[300px] mt-[361px] absolute light text-lightgray">
           SMM
         </span>
         <img src={Line29} alt="" className="absolute ml-[83px] mt-[500px] " />
@@ -219,7 +220,7 @@ export const Case = (props) => {
           </div>
         </div>
 
-        <span className="ml-[300px] mt-[461px] absolute font-inter font-light text-lightgray">
+        <span className="ml-[300px] mt-[461px] absolute light text-lightgray">
           Production
         </span>
         <svg
@@ -249,6 +250,22 @@ export const Case = (props) => {
         <Button className="ml-[90px] mt-[615px] text-lg bg-primary text-white font-inter absolute font-semibold">
           Рассчитать стоимость{" "}
         </Button>
+        <div className="absolute font-light text-white right-0 bottom-24">
+          <span className="text-6xl light">200+</span>
+          <img
+            src={line9}
+            alt=""
+            className="inline-flex w-72 ml-[28px] mb-[31px]"
+          />
+          <br />
+          <span
+            className="text-xl light"
+            style={{ display: "block", marginTop: "15px" }}
+          >
+            С 2017 года провели маркетинговое <br /> сопровождение для более чем
+            200 <br /> компаний!
+          </span>
+        </div>
       </div>
     </>
   );

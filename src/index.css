@@ -9,12 +9,26 @@
   src: url(./fonts/medium.otf);
 }
 
+@font-face {
+  font-family: mediumitalic;
+  src: url(./fonts/mediumitalic.otf);
+}
+
+@font-face {
+  font-family: lightq;
+  src: url(./fonts/light.otf);
+}
+
 body {
   margin: 0;
   font-family: main, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+.light {
+  font-family: lightq !important;
 }
 
 code {

@@ -4,6 +4,7 @@ import Button from "./../components/Button";
 import Background from "./../assets/background.png";
 import bmcscene from "./../assets/bmcscene.mp4";
 import underlying from "./../assets/underlying.png";
+import line9 from "./../assets/line9.png";
 
 export const Main = (props) => {
   return (
@@ -52,6 +53,22 @@ export const Main = (props) => {
             fill="white"
           />
         </svg>
+        <div className="absolute font-light text-white right-0 bottom-24">
+          <span className="text-6xl light">200+</span>
+          <img
+            src={line9}
+            alt=""
+            className="inline-flex w-72 ml-[28px] mb-[31px]"
+          />
+          <br />
+          <span
+            className="text-xl light"
+            style={{ display: "block", marginTop: "15px" }}
+          >
+            С 2017 года провели маркетинговое <br /> сопровождение для более чем
+            200 <br /> компаний!
+          </span>
+        </div>
       </div>
     </>
   );
