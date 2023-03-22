@@ -26,6 +26,7 @@ import { VerticalNav } from "./components/VerticalNav";
 import Preloader from "./pages/Preloader";
 import { Gpark } from "./pages/Gpark";
 import Footer from "./components/Footer";
+import Calculator from "./components/Calculator";
 
 const App = () => {
   const [value, setValue] = useState(0);
@@ -126,10 +127,10 @@ const App = () => {
         />
       </Main>
 
-      <Onthewaytocase className="relative"></Onthewaytocase>
+      <Onthewaytocase className="relative" />
       <Case />
       <Exp />
-
+      <Calculator />
       {/* <Gpark>
         <Navbar
           className="absolute z-50 bg-white"
