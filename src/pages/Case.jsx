@@ -1,12 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./../components/Navbar";
 import Button from "./../components/Button";
 import Background from "./../assets/background.png";
 import Loop from "./../assets/loop.mp4";
 import Glass from "./../assets/glass.png";
 import Line29 from "./../assets/line29.png";
+import Card from "./../components/Card";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import NavButton from "../components/NavButton";
+import Iphone from "./../assets/iphone.png";
+import Samsung from "./../assets/samsung.png";
+import Jetisu1 from "./../assets/jetisu1.png";
+import Jetisu2 from "./../assets/jetisu2.png";
+import Jetisu3 from "./../assets/jetisu3.png";
+import Jetisu4 from "./../assets/jetisu4.png";
 
 export const Case = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(true);
+    // setIsHovered2(false);
+    // setIsHovered3(false);
+  };
+
+  const handleUnhover = () => {
+    setIsHovered(false);
+    // setIsHovered2(true);
+    // setIsHovered3(true);
+  };
+
+  const handleHover2 = () => {
+    setIsHovered2(true);
+    // setIsHovered(false);
+    // setIsHovered3(false);
+  };
+
+  const handleUnhover2 = () => {
+    setIsHovered2(false);
+    // setIsHovered(true);
+    // setIsHovered3(true);
+  };
+
+  const handleHover3 = () => {
+    setIsHovered3(true);
+    // setIsHovered2(false);
+    // setIsHovered(false);
+  };
+
+  const handleUnhover3 = () => {
+    setIsHovered3(false);
+    // setIsHovered2(true);
+    // setIsHovered(true);
+  };
+
   return (
     <>
       <div
@@ -31,39 +80,100 @@ export const Case = (props) => {
         <span className="ml-[300px] mt-[245px] absolute font-inter font-light text-lightgray">
           Полный <br /> цикл
         </span>
-        <div className="ml-[518px] mt-[258px] absolute">
-          <svg
-            width="29"
-            height="16"
-            viewBox="0 0 29 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div onMouseEnter={handleHover} onMouseLeave={handleUnhover}>
+          <div className="ml-[518px] mt-[258px] absolute">
+            <svg
+              width="29"
+              height="16"
+              viewBox="0 0 29 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div
+            className="w-full h-full absolute ml-[60px] mt-[210px] z-10"
+            style={{ visibility: isHovered ? "visible" : "hidden" }}
           >
-            <path
-              opacity="0.3"
-              d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
-              fill="white"
-            />
-          </svg>
+            <Card className="w-[765px] h-[133px] relative">
+              <div className="left-10 absolute">
+                <h2 className="text-4xl font-medium">Jetisu</h2>
+                <p className="text-xl font-light font-inter">Полный цикл</p>
+              </div>
+              <div className="absolute right-28 w-[183px] h-[183px] rounded-full bg-primary">
+                <img
+                  src={Jetisu4}
+                  alt=""
+                  className="absolute w-[124px] h-[87px] -top-2 -right-9"
+                />
+                <img
+                  src={Jetisu3}
+                  alt=""
+                  className="absolute w-[124px] h-[87px] top-[88px] -right-9"
+                />
+                <img
+                  src={Jetisu1}
+                  alt=""
+                  className="absolute w-[124px] h-[87px] top-4 -left-9"
+                />
+                <img
+                  src={Jetisu2}
+                  alt=""
+                  className="absolute w-[124px] h-[87px] top-28 -left-9"
+                />
+              </div>
+              <div className="absolute right-4">
+                <NavButton>
+                  <AiOutlineArrowRight className="w-5 h-5" />
+                </NavButton>
+              </div>
+            </Card>
+          </div>
         </div>
         <img src={Line29} alt="" className="absolute ml-[83px] mt-[400px] " />
         <h1 className="ml-[83px] mt-[345px] absolute text-white font-medium text-3xl text-left leading-snug">
           G-park
         </h1>
-        <div className="ml-[518px] mt-[358px] absolute">
-          <svg
-            width="29"
-            height="16"
-            viewBox="0 0 29 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div onMouseEnter={handleHover2} onMouseLeave={handleUnhover2}>
+          <div className="ml-[518px] mt-[358px] absolute">
+            <svg
+              width="29"
+              height="16"
+              viewBox="0 0 29 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div
+            className="w-full h-full absolute ml-[60px] mt-[312px] z-10"
+            style={{ visibility: isHovered2 ? "visible" : "hidden" }}
           >
-            <path
-              opacity="0.3"
-              d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
-              fill="white"
-            />
-          </svg>
+            <Card className="w-[765px] h-[133px] relative">
+              <div className="left-10 absolute">
+                <h2 className="text-4xl font-medium">G-park</h2>
+                <p className="text-xl font-light font-inter">SMM</p>
+              </div>
+              <div className="absolute -right-24 w-[550px] h-[370px] z-1">
+                <img src={Iphone} alt="" />
+              </div>
+              <div className="absolute right-4">
+                <NavButton>
+                  <AiOutlineArrowRight className="w-5 h-5" />
+                </NavButton>
+              </div>
+            </Card>
+          </div>
         </div>
         <span className="ml-[300px] mt-[361px] absolute font-inter font-light text-lightgray">
           SMM
@@ -72,21 +182,43 @@ export const Case = (props) => {
         <h1 className="ml-[83px] mt-[445px] absolute text-white font-medium text-3xl text-left leading-snug">
           Sensata
         </h1>
-        <div className="ml-[518px] mt-[458px] absolute">
-          <svg
-            width="29"
-            height="16"
-            viewBox="0 0 29 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div onMouseEnter={handleHover3} onMouseLeave={handleUnhover3}>
+          <div className="ml-[518px] mt-[458px] absolute">
+            <svg
+              width="29"
+              height="16"
+              viewBox="0 0 29 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div
+            className="w-full h-full absolute ml-[60px] mt-[420px] z-10"
+            style={{ visibility: isHovered3 ? "visible" : "hidden" }}
           >
-            <path
-              opacity="0.3"
-              d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
-              fill="white"
-            />
-          </svg>
+            <Card className="w-[765px] h-[133px] relative">
+              <div className="left-10 absolute">
+                <h2 className="text-4xl font-medium">Sensata</h2>
+                <p className="text-xl font-light font-inter">Production</p>
+              </div>
+              <div className="absolute right-16 w-[200px] h-[391px] z-1">
+                <img src={Samsung} alt="" />
+              </div>
+              <div className="absolute right-4">
+                <NavButton>
+                  <AiOutlineArrowRight className="w-5 h-5" />
+                </NavButton>
+              </div>
+            </Card>
+          </div>
         </div>
+
         <span className="ml-[300px] mt-[461px] absolute font-inter font-light text-lightgray">
           Production
         </span>

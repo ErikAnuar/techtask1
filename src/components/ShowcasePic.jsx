@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import showcasePic from "./../assets/photogpark.png";
 
-export const ShowcasePic = () => {
+export const ShowcasePic = (props) => {
   const [showSmallImage, setShowSmallImage] = useState(true);
 
   function handleClick() {
@@ -11,8 +10,8 @@ export const ShowcasePic = () => {
   return (
     <>
       <div className="relative w-[600px] h-[600px]">
-        <div className="absolute z-1">
-          <img src={showcasePic} alt="" />
+        <div className={props.picturesize}>
+          <img src={props.img} alt="" />
         </div>
         {showSmallImage ? (
           <div className="absolute z-10 bottom-36 -left-6">

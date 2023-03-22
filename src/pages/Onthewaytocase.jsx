@@ -12,9 +12,10 @@ export const Onthewaytocase = (props) => {
       >
         {props.children}
 
-        <h1 className="ml-[87px] mt-[115px] absolute text-white font-bold text-7xl text-left leading-snug">
+        <h1 className="ml-[87px] mt-[115px] absolute text-white font-bold text-7xl text-left leading-snug z-10">
           Недостающий <br /> элемент вашего <br /> бизнеса
         </h1>
+        <div className="absolute bg-primary w-[304px] h-[62px] mt-[243px] ml-[83px] rounded-lg z-1"></div>
         <svg
           className="absolute bottom-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           width="51"

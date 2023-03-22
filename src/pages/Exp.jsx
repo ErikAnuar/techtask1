@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "./../assets/background.png";
+import showcasePic from "./../assets/photogpark.png";
 import { ShowcasePic } from "../components/ShowcasePic";
 
 export const Exp = (props) => {
@@ -13,7 +14,10 @@ export const Exp = (props) => {
         Немного о нашем опыте
       </span>
       <div className="absolute mt-[270px] ml-[790px]">
-        <ShowcasePic />
+        <ShowcasePic
+          img={showcasePic}
+          picturesize={"absolute z-1 w-[323px] h-[430px]"}
+        />
       </div>
       <span className="absolute mt-[400px] ml-[90px] text-white text-9xl font-bold">
         700+

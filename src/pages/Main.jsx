@@ -3,6 +3,7 @@ import Navbar from "./../components/Navbar";
 import Button from "./../components/Button";
 import Background from "./../assets/background.png";
 import bmcscene from "./../assets/bmcscene.mp4";
+import underlying from "./../assets/underlying.png";
 
 export const Main = (props) => {
   return (
@@ -19,6 +20,14 @@ export const Main = (props) => {
         <h1 className="ml-[87px] mt-[115px] absolute text-white font-bold text-7xl text-left leading-snug">
           Маркетинг <br /> полного цикла <br /> для застройщиков
         </h1>
+        <img
+          src={underlying}
+          alt=""
+          className="absolute w-[541px] h-[123px] mt-[382px] ml-[230px]"
+        />
+        <Button className="absolute mt-[484px] ml-[87px] bg-primary text-white font-inter">
+          Рассчитать стоимость
+        </Button>
         <svg
           className="absolute bottom-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           width="51"
