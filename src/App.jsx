@@ -27,6 +27,8 @@ import Preloader from "./pages/Preloader";
 import { Gpark } from "./pages/Gpark";
 import Footer from "./components/Footer";
 import Calculator from "./pages/Calculator";
+import { Offers } from "./pages/Offers";
+import { Marketing } from "./pages/Marketing";
 
 const App = () => {
   const [value, setValue] = useState(0);
@@ -130,8 +132,20 @@ const App = () => {
       <Onthewaytocase className="relative"></Onthewaytocase>
       <Case />
       <Exp />
+      <Offers></Offers>
+
       <Calculator /> */}
-      <Gpark>
+      <Marketing>
+        <Navbar
+          className="z-50 absolute bg-white"
+          button={
+            <Button className="rounded-md text-primary border-primary border hover:bg-primary hover:text-white font-inter non-italic font-light text-sm leading-2.9 pl-3.5 pr-3.5 pt-2.5 pb-2.5">
+              Получить консультацию
+            </Button>
+          }
+        />
+      </Marketing>
+      {/* <Gpark>
         <Navbar
           className="absolute bg-white"
           button={
@@ -140,7 +154,7 @@ const App = () => {
             </Button>
           }
         />
-      </Gpark>
+      </Gpark> */}
     </div>
   );
 };

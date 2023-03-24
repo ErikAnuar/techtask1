@@ -1,11 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo1 from "./../assets/bmcNavBlack.png";
 import logo2 from "./../assets/bmcNavGray.png";
 
 const Navbar = (props) => {
+  // const [isHidden, setIsHidden] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.pageYOffset > 2200) {
+  //       setIsHidden(true);
+  //     } else {
+  //       setIsHidden(false);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  //also add this inv nav after rounded-br-lg ${
+  // isHidden ? "hidden" : ""
+  // }
   return (
     <nav
-      className={`flex justify-center z-50 items-center h-[75px] w-21 rounded-tr-none rounded-tl-none rounded-bl-none rounded-br-lg ${props.className}`}
+      className={`flex justify-center z-50 items-center h-[75px] w-21 rounded-tr-none rounded-tl-none rounded-bl-none rounded-br-lg  ${props.className}`}
       style={{ position: "fixed" }}
     >
       <ul className="flex  justify-center items-center font-inter font-medium leading-navLh text-navFh">

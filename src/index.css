@@ -19,6 +19,11 @@
   src: url(./fonts/light.otf);
 }
 
+@font-face {
+  font-family: mediumq;
+  src: url(./fonts/medium.otf);
+}
+
 body {
   margin: 0;
   font-family: main, sans-serif;
@@ -27,8 +32,16 @@ body {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .light {
   font-family: lightq !important;
+}
+
+.medium {
+  font-family: mediumq !important;
 }
 
 code {

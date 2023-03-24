@@ -11,7 +11,7 @@ module.exports = {
         primary: "#073478",
         supergray: "#1E1E1E",
         gray: "#808080",
-        seriy: "#FFFFFF",
+        seriy: "#909393",
         grayForm: "#0D0D0D1A",
         orange: "#FF3E3E",
         darkGray: "#0D0D0D4D",
@@ -19,6 +19,8 @@ module.exports = {
         navColor: "#F6F6F6",
         lightgray: "#CBCBCB",
         lightblue: "#2F6AA366",
+        interestingdark: "#070D0D",
+        noisecolor: "#3c4444",
       },
       transitionProperty: {
         width: "width",

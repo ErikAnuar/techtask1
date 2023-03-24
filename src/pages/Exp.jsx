@@ -5,7 +5,11 @@ import jetisushowcasePic from "./../assets/photojetisu.png";
 import cityshowcasePic from "./../assets/city.png";
 import nature from "./../assets/nature.png";
 import line33 from "./../assets/line33.png";
+import video1 from "./../assets/video1.mp4";
+import video2 from "./../assets/video2.mp4";
+import video3 from "./../assets/video3.mp4";
 import { ShowcasePic } from "../components/ShowcasePic";
+import { ShowcaseVid } from "../components/ShowcaseVid";
 
 export const Exp = (props) => {
   return (
@@ -92,12 +96,19 @@ export const Exp = (props) => {
         alt=""
         className="absolute left-0 mt-[570px] w-[48px] h-[1px]"
       />
-      <span className="absolute mt-[550px] ml-[90px] text-white text-4xl font-normal">
+      <span className="absolute mt-[550px] ml-[90px] text-white text-4xl light">
         Отснятых видеороликов и <br /> фотосессий
       </span>
       <span className="absolute mt-[1000px] ml-[90px] text-white text-9xl font-bold">
         80+
       </span>
+      <div className="absolute mt-[900px] ml-[453px]">
+        <ShowcaseVid
+          video={video1}
+          vidsize="w-[323px] h-[485px]"
+          borderrad="10px"
+        />
+      </div>
       <img
         src={line33}
         alt=""
@@ -110,14 +121,28 @@ export const Exp = (props) => {
           photosetname={"G-park"}
         />
       </div>
-      <span className="absolute mt-[1150px] ml-[90px] text-white text-4xl font-normal">
+      <div className="absolute mt-[350px] ml-[1210px]">
+        <ShowcaseVid
+          video={video2}
+          vidsize="w-[327px] h-[581px]"
+          borderrad="10px 0px 0px 10px"
+        />
+      </div>
+      <span className="absolute mt-[1150px] ml-[90px] text-white text-4xl light">
         Разработано фирменных <br /> стилей и Web-сайтов
       </span>
-      <div className="absolute mt-[1430px] ml-[740px]">
+      <div className="absolute mt-[1460px] ml-[740px]">
         <ShowcasePic
           img={jetisushowcasePic}
           picturesize={"absolute z-1 w-[323px] h-[485px]"}
           photosetname={"Jetisu"}
+        />
+      </div>
+      <div className="absolute mt-[1980px] ml-[1090px]">
+        <ShowcaseVid
+          video={video3}
+          vidsize="w-[323px] h-[485px]"
+          borderrad="10px"
         />
       </div>
       <span className="absolute mt-[1600px] ml-[90px] text-white text-9xl font-bold z-10">
@@ -135,7 +160,7 @@ export const Exp = (props) => {
           photosetname={"City"}
         />
       </div>
-      <span className="absolute mt-[1750px] ml-[90px] text-white text-4xl font-normal">
+      <span className="absolute mt-[1750px] ml-[90px] text-white text-4xl light">
         Оформленных и продвинутых <br /> бизнес-аккаунтов
       </span>
       <span className="absolute mt-[2250px] ml-[90px] text-white text-9xl font-bold">
@@ -146,7 +171,7 @@ export const Exp = (props) => {
         alt=""
         className="absolute left-0 mt-[2420px] w-[48px] h-[1px]"
       />
-      <span className="absolute mt-[2400px] ml-[90px] text-white text-4xl font-normal">
+      <span className="absolute mt-[2400px] ml-[90px] text-white text-4xl light">
         Реализованных маркетинг- <br /> стратегий
       </span>
     </div>
