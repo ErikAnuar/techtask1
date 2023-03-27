@@ -1,11 +1,11 @@
 import React from "react";
 
-const Slider = ({ value, onChange }) => {
+const Slider = ({ value, onChange, props }) => {
   return (
     <input
       onChange={onChange}
       type="range"
-      className="cursor-pointer accent-primary"
+      className={`cursor-pointer accent-primary `}
       min={10}
       max={100}
       value={value}

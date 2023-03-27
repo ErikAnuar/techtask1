@@ -116,11 +116,10 @@ const App = () => {
     //   <Range />
     // </div>
     <div>
-      {/* <Preloader /> */}
-
-      {/* <Main className="relative">
+      {/* <Preloader />  */}
+      <Main className="relative">
         <Navbar
-          className="absolute bg-white"
+          className="absolute bg-white fixed-navbar"
           button={
             <Button className="rounded-md text-primary border-primary border hover:bg-primary hover:text-white font-inter non-italic font-light text-sm leading-2.9 pl-3.5 pr-3.5 pt-2.5 pb-2.5">
               Получить консультацию
@@ -128,14 +127,12 @@ const App = () => {
           }
         />
       </Main>
-
       <Onthewaytocase className="relative"></Onthewaytocase>
       <Case />
       <Exp />
       <Offers></Offers>
-
-      <Calculator /> */}
-      <Marketing>
+      <Calculator />
+      {/* <Marketing>
         <Navbar
           className="z-50 absolute bg-white"
           button={
@@ -144,7 +141,7 @@ const App = () => {
             </Button>
           }
         />
-      </Marketing>
+      </Marketing> */}
       {/* <Gpark>
         <Navbar
           className="absolute bg-white"

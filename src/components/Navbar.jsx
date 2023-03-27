@@ -27,7 +27,6 @@ const Navbar = (props) => {
   return (
     <nav
       className={`flex justify-center z-50 items-center h-[75px] w-21 rounded-tr-none rounded-tl-none rounded-bl-none rounded-br-lg  ${props.className}`}
-      style={{ position: "fixed" }}
     >
       <ul className="flex  justify-center items-center font-inter font-medium leading-navLh text-navFh">
         <li>
