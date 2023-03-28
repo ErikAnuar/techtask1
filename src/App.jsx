@@ -1,4 +1,5 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Button from "./components/Button";
 import NavButton from "./components/NavButton";
 import Slider from "./components/Slider";
