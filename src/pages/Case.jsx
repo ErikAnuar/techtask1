@@ -16,10 +16,14 @@ import Jetisu3 from "./../assets/jetisu3.png";
 import Jetisu4 from "./../assets/jetisu4.png";
 import line9 from "./../assets/line9.png";
 
+import { useNavigate } from "react-router-dom";
+
 export const Case = (props) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleHover = () => {
     setIsHovered(true);
@@ -169,7 +173,7 @@ export const Case = (props) => {
                 <img src={Iphone} alt="" />
               </div>
               <div className="absolute right-4">
-                <NavButton>
+                <NavButton onClick={() => navigate("/g-park")}>
                   <AiOutlineArrowRight className="w-5 h-5" />
                 </NavButton>
               </div>

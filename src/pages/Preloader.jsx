@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import mainLogo from "./../assets/bmcPreloader.png";
 import CircularProgress from "../components/CircularProgress";
 
@@ -6,7 +6,7 @@ const Preloader = (props) => {
   return (
     <div className="fixed z-50 top-0 left-0 w-screen min-h-screen bg-black flex flex-col items-center justify-center">
       <div className="relative">
-        <img src={mainLogo} className="w-logoW h-logoH top-logoT left-logoL" />
+        <img src={mainLogo} className="w-96" alt="logo" />
         <div className="absolute inset-0 flex items-center justify-center pt-36">
           <CircularProgress />
         </div>

@@ -23,7 +23,7 @@ import Card from "../components/Card";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import NavButton from "../components/NavButton";
 
-export const Gpark = (props) => {
+const Gpark = (props) => {
   const [value, setValue] = useState(0);
   const [isHovered2, setIsHovered2] = useState(false);
 
@@ -271,3 +271,4 @@ export const Gpark = (props) => {
     </>
   );
 };
+export default Gpark;
