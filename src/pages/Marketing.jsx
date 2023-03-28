@@ -9,7 +9,14 @@ import Layer22 from "./../assets/layer22.png";
 import zerotwo from "./../assets/02.png";
 import rightblock from "./../assets/rightblock.png";
 import Rightside from "./../assets/rightside.png";
+import bigcity from "./../assets/bigcity.png";
+import arrowdown from "./../assets/vector491.png";
+import flats from "./../assets/flats.png";
+import zhks from "./../assets/zhks.png";
+import graphs from "./../assets/graphs.png";
+import telephone from "./../assets/telephone.png";
 import { VerticalNav } from "../components/VerticalNav";
+import Footer2 from "../components/Footer2";
 import Button from "../components/Button";
 import Slider from "../components/Slider";
 
@@ -24,7 +31,7 @@ export const Marketing = (props) => {
           className="absolute w-[316px] h-[221px] mt-[310px]"
         />
         <div className="absolute mt-[80px]">
-          <VerticalNav className="absolute ml-[125px] w-[74px] h-[633px] cursor-pointer fixed-navbar z-30" />
+          <VerticalNav className="absolute ml-[125px] w-[74px] h-[629px] cursor-pointer fixed-navbar z-30" />
         </div>
         <span className="absolute text-white text-[89px] font-bold mt-[115px] ml-[330px]">
           Маркетинг
@@ -168,6 +175,108 @@ export const Marketing = (props) => {
         <span className="absolute text-white text-[89px] medium ml-[300px] mt-[50px]">
           Мир это данные
         </span>
+        <img
+          src={bigcity}
+          alt=""
+          className="absolute w-[876px] h-[592px] ml-[300px] mt-[220px] z-10"
+        />
+        <img
+          src={arrowdown}
+          alt=""
+          className="absolute w-[240px] h-[150px] mt-[120px] ml-[1010px] "
+        />
+        <span class="absolute text-xl text-white right-6 bg-primary p-4 top-80 rounded-lg z-20">
+          А мы систематизируем <br /> и управляем данными!
+        </span>
+        <div className="absolute top-32 right-8  justify-center items-center z-19">
+          <div className="flex flex-col items-center animate-marquee">
+            <div
+              className="text-interestingdark text-4xl py-1 px-2 mx-1"
+              style={{
+                WebkitTextStroke: "1px rgba(255, 255, 255, 0.22)",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              <div className="animate-marquee whitespace-nowrap">
+                {[...Array(5)].map((_, index) => (
+                  <span key={index} className="mx-4">
+                    <br />
+                    BIG DATA
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src={flats}
+          alt=""
+          className="absolute w-[601px] h-[192px] -right-12 top-[440px] z-9"
+        />
+        <img
+          src={zhks}
+          alt=""
+          className="absolute w-[342px] h-[28px] right-2 top-[640px] z-9"
+        />
+        <img
+          src={graphs}
+          alt=""
+          className="absolute w-[385px] h-[95px] right-2 top-[690px] z-9"
+        />
+      </div>
+      <div className="relative h-[961px] w-[full] bg-interestingdark ">
+        <span className="absolute mt-[215px] ml-[340px] text-white font-bold text-[50px] ">
+          Но главное это удобство!{" "}
+        </span>
+        <span className="absolute mt-[285px] ml-[340px] light text-seriy text-[18px] ">
+          Вы и ваши менеджеры получают понятные и визуально простые системы{" "}
+          <br />
+          для использования. А мы разбираемся со всей скучной и объёмной
+          работой.
+        </span>
+        <span className="absolute mt-[415px] ml-[340px] text-[33px] text-white medium">
+          В дополнение <br /> настраиваем
+        </span>
+        <div className="absolute mt-[520px] ml-[340px] bg-primary rounded-lg w-[150px] h-[100px] flex items-center justify-center">
+          <div className="flex items-center justify-center flex-col -ml-5">
+            <span className="flex items-center justify-between w-full mt-2">
+              <span className="flex items-center">
+                <span className="h-2 w-2 rounded-full bg-white mr-2"></span>
+                <span className="text-white">Bitrix</span>
+              </span>
+            </span>
+            <span className="flex items-center justify-between w-full mt-2">
+              <span className="flex items-center">
+                <span className="h-2 w-2 rounded-full bg-white mr-2"></span>
+                <span className="text-white">Flatris</span>
+              </span>
+            </span>
+            <span className="flex items-center justify-between w-full mt-2">
+              <span className="flex items-center">
+                <span className="h-2 w-2 rounded-full bg-white mr-2"></span>
+                <span className="text-white">Protrend</span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <span className="absolute mt-[645px] ml-[340px] text-[33px] text-white medium leading-9">
+          Создаём готовый план <br /> для открытия ОП
+        </span>
+        <span className="absolute mt-[745px] ml-[340px] text-[33px] text-white medium leading-9">
+          Консультируем <br /> по найму агентств продаж
+        </span>
+
+        <img
+          src={telephone}
+          alt=""
+          className="absolute top-36 h-[800px] w-[1300px] right-0 z-10"
+        />
+        <img
+          src={Vector22}
+          alt=""
+          className="absolute w-[316px] h-[221px] mt-[510px]"
+        />
+        <Footer2 className="bottom-0 right-0"></Footer2>
       </div>
     </div>
   );

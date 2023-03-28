@@ -25,6 +25,7 @@ import { CheckButton } from "./components/CheckButton";
 import { VerticalNav } from "./components/VerticalNav";
 import Preloader from "./pages/Preloader";
 import { Gpark } from "./pages/Gpark";
+import { Team } from "./pages/Team";
 import Footer from "./components/Footer";
 import Calculator from "./pages/Calculator";
 import { Offers } from "./pages/Offers";
@@ -132,6 +133,7 @@ const App = () => {
       <Exp />
       <Offers></Offers>
       <Calculator />
+      <Team />
       {/* <Marketing>
         <Navbar
           className="z-50 absolute bg-white"

@@ -13,7 +13,7 @@ const Calculator = () => {
   let formatter = new Intl.NumberFormat("ru");
   return (
     <>
-      <div className="h-[2379px] absolute w-full bg-black">
+      <div className="h-[2379px] relative w-full bg-black">
         <div className="w-full h-full px-20 pt-32 pb-9">
           <div className="w-full h-full rounded-[32px] bg-white">
             <div className="flex pt-16">

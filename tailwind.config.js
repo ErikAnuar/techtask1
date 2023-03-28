@@ -22,6 +22,7 @@ module.exports = {
         interestingdark: "#070D0D",
         noisecolor: "#3c4444",
         tipowhite: "#f4f4f4",
+        teamdark: "#0D0D0D",
       },
       transitionProperty: {
         width: "width",
