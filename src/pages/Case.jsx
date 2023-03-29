@@ -133,7 +133,7 @@ export const Case = (props) => {
                 />
               </div>
               <div className="absolute right-4">
-                <NavButton>
+                <NavButton onClick={() => navigate("/jetisu")}>
                   <AiOutlineArrowRight className="w-5 h-5" />
                 </NavButton>
               </div>

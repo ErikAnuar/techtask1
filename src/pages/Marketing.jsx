@@ -281,3 +281,5 @@ export const Marketing = (props) => {
     </div>
   );
 };
+
+export default Marketing;
