@@ -12,6 +12,8 @@ const Marketing = lazy(() => import("./pages/Marketing"));
 const Ad = lazy(() => import("./pages/Ad"));
 const Production = lazy(() => import("./pages/Production"));
 
+const SMM = lazy(() => import("./pages/Smm"));
+
 const App = () => {
   return (
     <Suspense fallback={<Preloader />}>
@@ -73,6 +75,7 @@ const App = () => {
             }
           />
           <Route path="/production" element={<Production />} />
+          <Route path="/smm" element={<SMM />} />
         </Routes>
       </BrowserRouter>
     </Suspense>

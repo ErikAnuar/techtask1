@@ -24,7 +24,7 @@ export const VerticalNav = (props) => {
             className={`text-gray font-medium text-3xl cursor-pointer ${
               props.active === "M" && "text-white"
             }`}
-            onMouseEnter={() => props.onHover("M")}
+            onMouseEnter={() => props && props.onHover && props.onHover("M")}
             onClick={() => navigate("/marketing")}
           >
             M
@@ -35,7 +35,7 @@ export const VerticalNav = (props) => {
             className={`text-gray font-medium text-3xl cursor-pointer ${
               props.active === "S" && "text-white"
             }`}
-            onMouseEnter={() => props.onHover("S")}
+            onMouseEnter={() => props && props.onHover && props.onHover("S")}
             onClick={() => navigate("/smm")}
           >
             S
@@ -46,7 +46,7 @@ export const VerticalNav = (props) => {
             className={`text-gray font-medium text-3xl cursor-pointer ${
               props.active === "P" && "text-white"
             }`}
-            onMouseEnter={() => props.onHover("P")}
+            onMouseEnter={() => props && props.onHover && props.onHover("P")}
             onClick={() => navigate("/ad")}
           >
             P
@@ -57,7 +57,7 @@ export const VerticalNav = (props) => {
             className={`text-gray font-medium text-3xl cursor-pointer ${
               props.active === "Pr" && "text-white"
             }`}
-            onMouseEnter={() => props.onHover("Pr")}
+            onMouseEnter={() => props && props.onHover && props.onHover("Pr")}
             onClick={() => navigate("/production")}
           >
             Pr
